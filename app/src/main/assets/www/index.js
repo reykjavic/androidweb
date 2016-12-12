@@ -8,6 +8,14 @@ function saySomething() {
 }
 
 function getWorkers() {
-  var out = android.getWorkers();
-  alert(out);
+  return JSON.parse(android.getWorkers());
 }
+
+function loadWorkers() {
+  var workers = getWorkers();
+
+  for (var index in workers) {
+    $('#workers').append('<li>' + workers[index] + '</li>')
+  }
+}
+

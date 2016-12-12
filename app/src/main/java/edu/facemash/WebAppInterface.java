@@ -36,7 +36,6 @@ class WebAppInterface {
     /** get workers from database */
     @JavascriptInterface
     public String getWorkers() {
-//        return "db.workers";
         return this.db.getWorkers();
     }
 }
