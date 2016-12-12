@@ -1,0 +1,11 @@
+.image {
+  display: inline-block;
+  width: 50px;
+}
+.container {
+  float: left;
+}
+.button {
+  height: 200px;
+  width: 400px;
+}
