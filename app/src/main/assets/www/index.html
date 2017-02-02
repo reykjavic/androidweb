@@ -8,12 +8,11 @@
 <body>
 
 <div class="container">
+    <input id="phrase" type="text"/>
+    <button class="button" onclick="saySomething($('#phrase').val())">say</button>
 
-    <button class="button" onclick="loadWorkers()">getWorkers</button>
-    <ul id="workers">
-        <!-- workers from java -->
-    </ul>
-
+    <input id="toast" type="text"/>
+    <button class="button" onclick="showAndroidToast($('#toast').val())">pop</button>
 </div>
 
 </body>
